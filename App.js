@@ -10,6 +10,7 @@ import {
 import Header from "./Components/Header";
 import TodoItems from "./Components/TodoItems";
 import AddTodo from "./Components/AddTodo";
+import Example from "./Components/Example"
 export default function App() {
 	const [todos, setTodos] = useState([
 		{ text: "buy Coffee", key: "1" },
@@ -38,7 +39,8 @@ export default function App() {
 
 	return (
 		<View style={styles.container}>
-			<Header />
+      <Header />
+      <Example />
 			<View style={styles.content}>
 				<AddTodo submitHandler={submitHandler} />
 				<View style={styles.list}>{todoList}</View>
