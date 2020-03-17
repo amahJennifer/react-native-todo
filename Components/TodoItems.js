@@ -6,7 +6,7 @@ const TodoItems = ({item,presshandler}) => {
   return (
     <TouchableOpacity onPress={()=>presshandler(item.key)}>
       <Text style={styles.item}>{item.text}</Text>
-  </TouchableOpacity>
+    </TouchableOpacity>
   )
 }
 const styles = StyleSheet.create({
