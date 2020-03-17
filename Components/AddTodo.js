@@ -16,7 +16,7 @@ function AddTodo({ submitHandler }) {
         onChangeText={changeHandler}
         value={text}
 			/>
-			<Button onPress={() => submitHandler(text)} title="Add Todo" color="coral" />
+			<Button testID="add-todo" onPress={() => submitHandler(text)} title="Add Todo" color="coral" />
 		</View>
 	);
 }
